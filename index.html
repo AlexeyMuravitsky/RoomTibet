@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>РумТибет</title>
+</head>
+
+<body>
+
+    <div class="background-image-wrap">
+
+        <header class="header">
+            <div class="header__container flex">
+
+
+                <a href="#" class="header__logo">
+                    <img src="./img/logo.svg" alt="Логотип компании"></img>
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list list-reset flex">
+                        <li class="header__nav-item">
+                            <a aria-label="На главную" class="header__nav-link" href="#main">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a aria-label="Информация о гиде" class="header__nav-link" href="#main">
+                                Про гида
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#main">
+                                Программа тура
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a aria-label="Информация о стоймости тура" class="header__nav-link" href="#main">
+                                Стоимость
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#main">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="header__nav-item ">
+                            <a class="header__nav-link" href="#main">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a aria-label="Связаться с консультантом" class="btn link-consalt" href="#main">
+                                Консультация
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+
+
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero__container">
+
+                <h1 class="hero__title">Насладись прогулкой в&nbsp;горах с&nbsp;командой единомышленников</h1>
+
+                <form class="hero__form flex">
+
+                    <label class="hero__label" for="location"><select id="location" name="location"
+                            class="hero__select">
+                            <option value="">Локация для тура</option>
+                            <option value="">Италия</option>
+                            <option value="">Швейцария</option>
+                            <option value="">Тибет</option>
+                        </select>
+                        <p class="hero__label-descr">выберите из списка</p>
+                    </label>
+
+                    <label class="hero__label" for="date">
+                        <div class="hero__input flex">
+                            <input id="date" type="date" name="date" class="hero__input-group">
+                            <input id="date" type="date" name="date" class="hero__input-group">
+                        </div>
+                        <p class="hero__label-descr">укажите диапазон</p>
+                    </label>
+
+                    <label class="hero__label" for="participants">
+                        <select id="participants" name="participants" class="hero__select">
+                            <option value="">Участники</option>
+                            <option value="">4</option>
+                            <option value="">6-10</option>
+                            <option value="">10+</option>
+                        </select>
+                        <p class="hero__label-descr">минимум 4 человека</p>
+                    </label>
+
+                    <button class="hero__button">Найти программу</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <main></main>
+    <footer></footer>
