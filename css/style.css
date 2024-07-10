@@ -20,6 +20,13 @@
 }
 
 @font-face {
+  font-family: "Nunito Sans";
+  src: url("/fonts/NunitoSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Next Art";
   src: url("/fonts/NEXT\ ART_Regular.otf") format("truetype");
   font-weight: 400;
@@ -80,6 +87,38 @@ a {
 
 .flex {
   display: flex;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #f2be22;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38.4px;
+  margin-bottom: 40px;
+}
+
+.section-destr {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 16px 36px;
+  background-color: #1a3e3e;
+  color: #fdfdfd;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .background-image-wrap {
@@ -190,9 +229,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .hero__container {
   max-width: 1240px;
-  padding-left: 40px;
+  padding-left: 35px;
   margin: 0 auto;
-  padding-bottom: 72px;
+  padding-bottom: 85px;
 }
 
 .hero__title {
@@ -203,4 +242,56 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #fdfdfd;
   margin-bottom: 40px;
   letter-spacing: 1px;
+}
+
+/* ABOUT */
+
+.about__container {
+  position: relative;
+  justify-content: space-between;
+  max-width: 1240px;
+  padding: 0 37px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.about__images {
+  position: relative;
+  max-width: 480px;
+}
+
+.about__images-top {
+  z-index: -1;
+  position: absolute;
+}
+
+.about__images-bottom {
+  position: relative;
+  padding-top: 125px;
+  padding-left: 130px;
+}
+
+.about__images::after {
+  content: "";
+  position: absolute;
+  top: 56.8%;
+  left: 58.7%;
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/img-play.png");
+}
+
+.about__content {
+  padding-top: 63px;
+  padding-left: 16px;
+  max-width: 580px;
+  flex-grow: 1;
+}
+
+.about__descr {
+  margin-bottom: 40px;
 }
