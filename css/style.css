@@ -202,6 +202,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 16px 36px;
   border: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .hero__label {
@@ -373,4 +374,148 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 250px;
   height: 250px;
   object-fit: contain;
+}
+
+/* DIRECTIONS */
+
+.directions__container {
+  max-width: 1240px;
+  /* padding-left: 35px; */
+  margin: 0 auto;
+  padding-bottom: 85px;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.directions__titles {
+  text-align: center;
+  padding-left: 16px;
+}
+
+.directions {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.directions__list {
+  list-style-type: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.directions__item-content {
+  position: relative;
+  width: 380px;
+  height: 500px;
+}
+
+.directions-rating1::before,
+.directions-rating2::before,
+.directions-rating3::before {
+  position: absolute;
+  display: flex;
+  font-weight: 900;
+  top: 50px;
+  right: 0;
+  background-position: left center;
+  background-size: 24px 24px;
+  background-image: url(../img/star-icon.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 32px;
+  width: 65px;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.directions-rating1::before {
+  content: "4.9";
+}
+.directions-rating2::before {
+  content: "4.5";
+}
+.directions-rating3::before {
+  content: "5.0";
+}
+
+.directions__item-img1 {
+  background-image: url(../img/direction-pic1.png);
+}
+
+.directions__item-img2 {
+  background-image: url(../img/direction-pic2.png);
+}
+
+.directions__item-img3 {
+  background-image: url(../img/direction-pic3.png);
+}
+
+.directions__item {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.directions__item-overlay {
+  padding: 31px;
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 380px;
+  height: 500px;
+  transition: top 0.3s ease-in-out;
+  z-index: 1;
+  backdrop-filter: blur(7px);
+}
+
+.directions__item:hover .directions__item-overlay,
+.directions__item-overlay:hover {
+  top: 0;
+}
+
+.item-overlay-header {
+  margin-bottom: 100px;
+}
+
+.directions__item-overlay {
+  color: #f3f5f4;
+}
+
+.directions__title {
+  margin-bottom: 33px;
+}
+
+.directions__item-price {
+  color: #fdfdfd;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  align-self: center;
+}
+
+.directions__item-overlay-header {
+  margin-bottom: 38px;
+  justify-content: space-between;
+}
+
+.directions__btn {
+  align-self: center;
+}
+
+.directions__item-title-main {
+  font-size: 24px;
+  font-weight: 700px;
+}
+
+.directions__item-descr {
+  line-height: 24px;
+  margin-bottom: 105px;
+}
+
+.directions__cards {
+  margin-bottom: 34px;
 }
