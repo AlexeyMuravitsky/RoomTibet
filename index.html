@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>РумТибет</title>
@@ -18,7 +19,7 @@
 
 
                 <a href="#" class="header__logo">
-                    <img src="./img/logo.svg" alt="Логотип компании"></img>
+                    <img src="./img/logo.svg" alt="Логотип компании">
                 </a>
                 <nav class="header__nav">
                     <ul class="header__nav-list list-reset flex">
@@ -74,25 +75,24 @@
 
                 <form class="hero__form flex">
 
-                    <label class="hero__label" for="location"><select id="location" name="location"
-                            class="hero__select">
+                    <div class="hero__label" for="location"><select id="location" name="location" class="hero__select">
                             <option value="">Локация для тура</option>
                             <option value="">Италия</option>
                             <option value="">Швейцария</option>
                             <option value="">Тибет</option>
                         </select>
                         <p class="hero__label-descr">выберите из списка</p>
-                    </label>
+                    </div>
 
-                    <label class="hero__label" for="date">
+                    <div class="hero__label" for="date">
                         <div class="hero__input flex">
                             <input id="date" type="date" name="date" class="hero__input-group">
-                            <input id="date" type="date" name="date" class="hero__input-group">
+                            <input id="date2" type="date" name="date" class="hero__input-group">
                         </div>
                         <p class="hero__label-descr">укажите диапазон</p>
-                    </label>
+                    </div>
 
-                    <label class="hero__label" for="participants">
+                    <div class="hero__label" for="participants">
                         <select id="participants" name="participants" class="hero__select">
                             <option value="">Участники</option>
                             <option value="">4</option>
@@ -100,7 +100,7 @@
                             <option value="">10+</option>
                         </select>
                         <p class="hero__label-descr">минимум 4 человека</p>
-                    </label>
+                    </div>
 
                     <button class="hero__button">Найти программу</button>
                 </form>
@@ -118,8 +118,9 @@
                 </div>
 
                 <div class="about__content">
+                    <div class="about__subtitle section-subtitle">о&nbsp;нашем походе</div>
                     <h2 class="about__title section-title">
-                        <div class="about__subtitle section-subtitle">о&nbsp;нашем походе</div>
+
                         Исследуйте все горные массивы мира вместе с&nbsp;нами
                     </h2>
                     <p class="about__descr section-destr">
@@ -127,6 +128,7 @@
                         двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа Hampden-Sydney,
                         штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum,
                         &quot;consectetur&quot;и занялся его поисками в&nbsp;классической латинской литературе.
+
                     </p>
                     <button class="about__button btn">Программа тура</button>
                 </div>
@@ -134,5 +136,76 @@
 
             </div>
         </section>
+        <section class="offer">
+            <div class="offer__container flex">
+
+                <div class="offer__content">
+
+                    <div class="offer__best-offer">
+                        <div class="offer__subtitle section-subtitle">наше предложение</div>
+                        <h2 class="offer__title section-title">
+                            Лучшие программы для тебя
+                        </h2>
+                        <p class="offer__descr section-destr">
+                            Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э., то&nbsp;есть
+                            более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа.
+                        </p>
+                    </div>
+
+                    <div class="offer__advantages">
+
+                        <div class="offer__advantage flex">
+                            <div class="offer__advantage-icon icon-offer1"></div>
+                            <div class="offer__advantage-content">
+                                <h3 class="offer__advantage-title">Опытный гид</h3>
+                                <p class="offer__advantage-destr">Для современного мира базовый вектор развития
+                                    предполагает
+                                    независимые способы
+                                    реализации соответствующих условий активизации.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="offer__advantage flex">
+                            <div class="offer__advantage-icon icon-offer2"></div>
+                            <div class="offer__advantage-content">
+                                <h3 class="offer__advantage-title">Безопасный поход</h3>
+                                <p class="offer__advantage-destr">Для современного мира базовый вектор развития
+                                    предполагает
+                                    независимые способы
+                                    реализации соответствующих условий активизации.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="offer__advantage flex">
+                            <div class="offer__advantage-icon icon-offer3"></div>
+                            <div class="offer__advantage-content">
+                                <h3 class="offer__advantage-title">Лояльные цены</h3>
+                                <p class="offer__advantage-destr">Для современного мира базовый вектор развития
+                                    предполагает
+                                    независимые способы
+                                    реализации соответствующих условий активизации.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="offer__btn btn">Стоимость программ</button>
+                </div>
+                <div class="offer__images">
+                    <img src="../img/offer-pic1.png" alt="">
+                    <img src="../img/offer-pic2.png" alt="">
+                    <img src="../img/offer-pic3.png" alt="">
+                    <img src="../img/offer-pic4.png" alt="">
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+
     </main>
     <footer></footer>
