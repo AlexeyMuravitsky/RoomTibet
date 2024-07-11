@@ -66,6 +66,10 @@ p {
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 *,
 *::before,
 *::after {
@@ -315,7 +319,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .offer__content {
   padding-left: 16px;
   width: 580px;
-  height: 591px;
+  /* height: 591px; */
   /* border: 1px solid #801111; */
 }
 
@@ -394,11 +398,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .directions {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 17px;
 }
 
 .directions__list {
-  list-style-type: none;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -503,7 +506,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .directions__btn {
-  align-self: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .directions__item-title-main {
@@ -518,4 +522,102 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .directions__cards {
   margin-bottom: 34px;
+}
+
+/* BLOG */
+
+.blog {
+  padding-top: 81px;
+  background-color: #f3f5f4;
+}
+
+.blog__title {
+  margin-bottom: 43px;
+}
+
+.blog__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.blog__titles {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.blog__card {
+  /* border: 1px solid #f2be22; */
+  background-color: #fdfdfd;
+  padding: 14px 16px;
+  height: 312px;
+  width: 580px;
+  gap: 20px;
+}
+
+.card-image1 {
+  background-image: url("../img/blog-image1.png");
+}
+
+.card-image2 {
+  background-image: url("../img/blog-image2.png");
+}
+
+.card-image3 {
+  background-image: url("../img/blog-image3.png");
+}
+
+.card-image4 {
+  background-image: url("../img/blog-image4.png");
+}
+
+.blog__card-image {
+  width: 230px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog__card-content {
+  flex-direction: column;
+  width: 294px;
+  height: 280px;
+  padding: 16px 0;
+}
+
+.blog__card-title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.blog__card-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.blog__card-destr {
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.blog__cards-list {
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.blog__button {
+  display: block;
+  margin: 0 auto;
+}
+
+.blog__card-date {
+  color: #f2be22;
 }
