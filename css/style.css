@@ -28,14 +28,14 @@
 
 @font-face {
   font-family: "Next Art";
-  src: url("../fonts/NEXT\ ART_Regular.otf") format("truetype");
+  src: url("../fonts/NEXT ART_Regular.otf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Next Art";
-  src: url("../fonts/NEXT\ ART_Bold.otf") format("truetype");
+  src: url("../fonts/NEXT ART_Bold.otf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -63,6 +63,10 @@ h6 {
 
 p {
   margin: 0;
+  padding: 0;
+}
+
+ul {
   padding: 0;
 }
 
@@ -252,7 +256,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .about__container {
   position: relative;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
   max-width: 1240px;
   padding: 0 37px;
   margin: 0 auto;
@@ -303,21 +308,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* OFFER */
 
 .offer {
+  padding-left: 15px;
   background-color: #f3f5f4;
   padding-top: 76px;
   padding-bottom: 100px;
 }
 
 .offer__container {
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 90px;
   max-width: 1240px;
   padding: 0 22px;
   margin: 0 auto;
 }
 
 .offer__content {
-  padding-left: 16px;
   width: 580px;
   /* height: 591px; */
   /* border: 1px solid #801111; */
@@ -404,6 +410,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .directions__list {
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  padding-left: 15px;
 }
 
 .directions__item-content {
@@ -529,6 +538,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .blog {
   padding-top: 81px;
   background-color: #f3f5f4;
+  padding-left: 0;
 }
 
 .blog__title {
@@ -547,7 +557,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .blog__card {
-  /* border: 1px solid #f2be22; */
+  border-radius: 10px;
   background-color: #fdfdfd;
   padding: 14px 16px;
   height: 312px;
@@ -607,10 +617,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .blog__cards-list {
+  overflow: hidden;
+  display: flex;
   gap: 22px;
-  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   margin-bottom: 51px;
+  padding: 0;
 }
 
 .blog__button {
@@ -620,4 +633,164 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .blog__card-date {
   color: #f2be22;
+}
+
+/* GALLERY */
+
+.gallery {
+  padding-top: 81px;
+  padding-bottom: 200px;
+}
+
+.gallery__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__subtitle {
+  text-align: center;
+}
+
+.gallery__photos {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+/* SUBSCRIBE */
+
+.subscribe {
+}
+
+.subscribe__container {
+  max-width: 1180px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 40px 100px;
+  box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  gap: 64px;
+}
+
+.subscribe__button {
+  padding: 12px 24px;
+}
+
+.subscribe__info-label {
+  font-size: 18px;
+  color: #f2be22;
+}
+
+.subscribe__title {
+  font-size: 26px;
+}
+
+.subscribe__info {
+  width: 380px;
+}
+
+.subscribe__form {
+  width: 536px;
+}
+
+.subscribe__form-label {
+  display: block;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #1a3e3e;
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.footer__container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer__content-info {
+  width: 480px;
+}
+.footer__content-services {
+  width: 280px;
+}
+.footer__content-important {
+  width: 280px;
+}
+
+.footer__copyrights {
+  background-color: #000000;
+}
+
+.footer__copyrights__container {
+  justify-content: space-between;
+  max-width: 1240px;
+  padding: 24px 30px;
+  margin: 0 auto;
+}
+
+/* SLIDER */
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari и Opera */
+}
+
+.blog__cards {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.blog__cards-list {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.blog__cards-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari и Opera */
+}
+
+.blog__cards-item {
+  flex: 0 0 auto;
+  display: flex;
+  scroll-snap-align: center;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%; /* Каждая карточка занимает всю ширину контейнера */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b52727;
+  width: 90%; /* Устанавливаем ширину карточек меньше 100%, чтобы оставался зазор */
+  box-sizing: border-box;
+  padding: 10px;
 }
