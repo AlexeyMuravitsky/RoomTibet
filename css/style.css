@@ -136,7 +136,7 @@ a {
 }
 
 .header__container {
-  padding-top: 16px;
+  padding: 16px 25px 0 5px;
   max-width: 1180px;
   margin: 0 auto;
   align-items: center;
@@ -163,9 +163,19 @@ a {
   color: #fdfdfd;
   font-size: 16px;
   border-radius: 4px;
+  position: relative;
+  left: 33px;
 }
 
 /* HERO */
+
+.hero__container {
+  max-width: 1240px;
+  padding-left: 35px;
+  padding-right: 20px;
+  margin: 0 auto;
+  padding-bottom: 85px;
+}
 
 .hero__select {
   width: 100%;
@@ -233,13 +243,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: #ffffff33;
   border-radius: 10px;
   flex-wrap: wrap;
-}
-
-.hero__container {
-  max-width: 1240px;
-  padding-left: 35px;
-  margin: 0 auto;
-  padding-bottom: 85px;
 }
 
 .hero__title {
@@ -332,7 +335,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .offer__images {
   display: flex;
   width: 510px;
-  height: 510px;
   /* border: 1px solid #801111; */
   gap: 10px;
   flex-wrap: wrap;
@@ -403,8 +405,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .directions {
-  padding-top: 80px;
-  padding-bottom: 17px;
+  padding-top: 83px;
+  padding-bottom: 15px;
 }
 
 .directions__list {
@@ -517,6 +519,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .directions__btn {
   display: block;
   margin: 0 auto;
+  position: relative;
+  left: 9px;
 }
 
 .directions__item-title-main {
@@ -541,6 +545,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: 0;
 }
 
+.blog__cards {
+  padding-left: 20px;
+}
+
 .blog__title {
   margin-bottom: 43px;
 }
@@ -561,8 +569,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #fdfdfd;
   padding: 14px 16px;
   height: 312px;
-  width: 580px;
-  gap: 20px;
+  max-width: 580px;
+  gap: 25px;
 }
 
 .card-image1 {
@@ -617,7 +625,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .blog__cards-list {
-  overflow: hidden;
+  flex-wrap: wrap;
   display: flex;
   gap: 22px;
   justify-content: center;
@@ -629,6 +637,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .blog__button {
   display: block;
   margin: 0 auto;
+  position: relative;
+  left: 9px;
 }
 
 .blog__card-date {
@@ -639,7 +649,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .gallery {
   padding-top: 81px;
-  padding-bottom: 200px;
+  padding-bottom: 0px;
 }
 
 .gallery__container {
@@ -657,37 +667,61 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding-left: 15px;
+  padding-left: 30px;
+  padding-right: 15px;
   margin-bottom: 50px;
+}
+
+.gallery__btn {
+  position: relative;
+  left: 9px;
 }
 
 /* SUBSCRIBE */
 
-.subscribe {
-}
-
 .subscribe__container {
+  top: 100px;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
   max-width: 1180px;
   margin: 0 auto;
-  align-items: center;
-  padding: 40px 100px;
+  /* align-items: center; */
+  padding: 40px 100px 28px 100px;
   box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
   background-color: #fdfdfd;
   border-radius: 6px;
   gap: 64px;
+  /* margin-bottom: 5px; */
+  left: 9px;
 }
 
 .subscribe__button {
   padding: 12px 24px;
+  margin-bottom: 10px;
 }
 
 .subscribe__info-label {
   font-size: 18px;
   color: #f2be22;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.subscribe__form-input {
+  width: 280px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 12px 16px;
+  background-color: #f3f5f4;
+  border: none;
+  margin-right: 11px;
 }
 
 .subscribe__title {
   font-size: 26px;
+  line-height: 31.2px;
 }
 
 .subscribe__info {
@@ -700,6 +734,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .subscribe__form-label {
   display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -707,7 +744,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer {
   background-color: #1a3e3e;
   color: #ffffff;
-  padding-top: 50px;
+  padding-top: 250px;
 }
 
 .footer__container {
@@ -743,54 +780,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 0 auto;
 }
 
-/* SLIDER */
-
-.slider::-webkit-scrollbar {
-  display: none; /* Chrome, Safari и Opera */
+.subscribe__terms {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
 }
 
-.blog__cards {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.blog__cards-list {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-}
-
-.blog__cards-list::-webkit-scrollbar {
-  display: none; /* Chrome, Safari и Opera */
-}
-
-.blog__cards-item {
-  flex: 0 0 auto;
-  display: flex;
-  scroll-snap-align: center;
-  align-items: center;
-  justify-content: center;
-  min-width: 100%; /* Каждая карточка занимает всю ширину контейнера */
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 10px;
-  background-color: #f0f0f0;
-}
-
-.child {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #b52727;
-  width: 90%; /* Устанавливаем ширину карточек меньше 100%, чтобы оставался зазор */
-  box-sizing: border-box;
-  padding: 10px;
+.subscribe__link {
+  text-decoration: underline;
 }
