@@ -85,6 +85,14 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s ease-in-out, text-decoration-color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #f2be22;
+  text-decoration: underline;
+  text-decoration-color: #f2be22;
+  cursor: pointer;
 }
 
 .list-reset {
@@ -127,6 +135,19 @@ a {
   color: #fdfdfd;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #006161;
+}
+
+.btn:active {
+  background-color: #2a4747;
+}
+
+.link-consalt:hover {
+  text-decoration: none;
 }
 
 .btn-menu {
@@ -229,6 +250,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   font-weight: 700;
   cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero__button:hover {
+  background-color: #f2be22;
+}
+
+.hero__button:active {
+  background-color: #bd941b;
 }
 
 .hero__label {
@@ -581,6 +612,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   gap: 25px;
 }
 
+.blog__card:hover .blog__card-title {
+  text-decoration: underline;
+}
+
 .card-image1 {
   background-image: url("../img/blog-image1.png");
 }
@@ -616,6 +651,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 24px;
+  text-decoration: none;
 }
 
 .blog__card-footer {
@@ -833,6 +869,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 14px;
   width: 10px;
   margin-right: 7px;
+  transition: background 0.3s ease-in-out;
 }
 
 .footer__content-important-item::before {
@@ -845,6 +882,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-right: 10px;
   left: -3px;
   position: absolute;
+  transition: background 0.3s ease-in-out;
+}
+
+.footer__content-important-item:hover::before,
+.footer__content-services-item:hover::before {
+  background: url("../img/footer-arrow-hover.svg");
 }
 
 .footer__content-important-list {

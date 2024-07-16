@@ -102,6 +102,14 @@
     line-height: 42px;
   }
 
+  .about__images-bottom {
+    width: 100%;
+  }
+
+  .about__container {
+    padding: 0 15px;
+  }
+
   .offer {
     padding-left: 0;
   }
@@ -165,5 +173,133 @@
   .footer__copyrights__container {
     flex-wrap: wrap;
     gap: 8px;
+    left: 0;
+  }
+
+  .subscribe__form-input {
+    width: 237px;
+  }
+
+  /* SLIDER */
+
+  .blog__cards-list {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 22px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .blog__cards-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blog__cards {
+    display: flex;
+    width: 290px;
+  }
+
+  .blog__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .blog__cards-item {
+    scroll-snap-align: start;
+  }
+
+  .gallery__container {
+    align-items: center;
+  }
+
+  .gallery__photos {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 0;
+    width: 290px;
+    overflow: hidden;
+    border-radius: 6px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .gallery__photo {
+    scroll-snap-align: start;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .directions__item-overlay {
+    width: 285px;
+    font-size: 18px;
+  }
+
+  .directions__item-title-main {
+    font-size: 18px;
+  }
+
+  .directions__item-title-subtitle {
+    display: none;
+  }
+
+  .directions__item-title {
+    align-self: center;
+  }
+
+  .directions__item-price {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .directions__item-descr {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .directions__item-overlay-header {
+    margin-bottom: 50px;
+  }
+
+  .directions__container {
+    align-items: center;
+  }
+
+  .directions__list {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .directions__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .directions__item {
+    scroll-snap-align: start;
+    display: flex;
+    flex: 0 0 auto;
+    width: 285px;
+    height: 400px;
+    font-size: 18px;
+  }
+
+  .directions__cards {
+    width: 290px;
+    display: flex;
+    align-items: center;
   }
 }
