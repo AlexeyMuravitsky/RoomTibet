@@ -1,0 +1,169 @@
+@media (max-width: 1279px) {
+  .header__container {
+    padding: 25px;
+  }
+
+  .link-consalt {
+    left: 0;
+  }
+
+  .hero__container {
+    padding: 0 16px 85px 16px;
+  }
+
+  .subscribe__container {
+    padding: 40px;
+    left: 0;
+    gap: 25px;
+  }
+
+  .about__images-top {
+    display: none;
+  }
+
+  .about__container {
+    align-items: center;
+    gap: 25px;
+  }
+
+  .about__images-bottom {
+    position: relative;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .about__images::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 44%;
+    background-image: url("../img/img-play.png");
+  }
+
+  .offer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link-consalt {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+    position: relative;
+    padding: 10px;
+    top: -5px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero__form {
+    display: none;
+  }
+
+  .hero__button-mobile {
+    display: block;
+  }
+
+  .about__container {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .about__button {
+    align-self: center;
+  }
+
+  .footer__content-services {
+    left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__title {
+    font-size: 23px;
+    line-height: 42px;
+  }
+
+  .offer {
+    padding-left: 0;
+  }
+
+  .offer__images {
+    display: none;
+  }
+
+  /* .directions__list {
+    padding: 0 16px;
+  } */
+
+  .directions__titles {
+    text-align: left;
+  }
+
+  .blog__card-image {
+    width: 285px;
+  }
+
+  .blog__cards {
+    padding-left: 0;
+  }
+
+  .blog__card {
+    border-radius: 6px;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    padding: 0;
+  }
+
+  .blog__card-content {
+    padding: 16px;
+    width: 285px;
+  }
+
+  .blog__card-title {
+    font-size: 20px;
+  }
+
+  .blog__titles {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .gallery__photos {
+    padding-left: 15px;
+  }
+
+  .gallery__titles {
+    padding: 0 16px;
+    align-self: self-start;
+  }
+
+  .gallery__subtitle {
+    text-align: left;
+  }
+
+  .footer__copyrights__container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
