@@ -172,7 +172,7 @@ a:hover {
 }
 
 .background-image-wrap {
-  background-image: url("../img/hero-background.png");
+  background-image: url("../img/hero-background.webp");
   background-size: cover;
   background-position: center;
 }
@@ -214,7 +214,6 @@ a:hover {
 }
 
 /* HERO */
-
 .hero__container {
   max-width: 1240px;
   padding-left: 35px;
@@ -321,7 +320,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* ABOUT */
-
 .about__container {
   position: relative;
   -webkit-box-pack: center;
@@ -355,7 +353,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: 130px;
 }
 
-.about__images::after {
+.image-bottom-icon-play {
+  position: relative;
+}
+
+.image-bottom-icon-play::after {
   content: "";
   position: absolute;
   top: 56.8%;
@@ -379,7 +381,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* OFFER */
-
 .offer {
   padding-left: 15px;
   background-color: #f3f5f4;
@@ -401,8 +402,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .offer__content {
   width: 580px;
-  /* height: 591px; */
-  /* border: 1px solid #801111; */
 }
 
 .offer__images {
@@ -410,7 +409,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: -ms-flexbox;
   display: flex;
   width: 510px;
-  /* border: 1px solid #801111; */
   gap: 10px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -474,13 +472,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* DIRECTIONS */
-
 .directions__container {
   max-width: 1240px;
-  /* padding-left: 35px; */
   margin: 0 auto;
   padding-bottom: 85px;
-  /* align-items: center; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -548,15 +543,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .directions__item-img1 {
-  background-image: url(../img/direction-pic1.png);
+  background-image: url(../img/direction-pic1.webp);
 }
 
 .directions__item-img2 {
-  background-image: url(../img/direction-pic2.png);
+  background-image: url(../img/direction-pic2.webp);
 }
 
 .directions__item-img3 {
-  background-image: url(../img/direction-pic3.png);
+  background-image: url(../img/direction-pic3.webp);
 }
 
 .directions__item {
@@ -640,7 +635,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* BLOG */
-
 .blog {
   padding-top: 81px;
   background-color: #f3f5f4;
@@ -680,19 +674,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .card-image1 {
-  background-image: url("../img/blog-image1.png");
+  background-image: url("../img/blog-image1.webp");
 }
 
 .card-image2 {
-  background-image: url("../img/blog-image2.png");
+  background-image: url("../img/blog-image2.webp");
 }
 
 .card-image3 {
-  background-image: url("../img/blog-image3.png");
+  background-image: url("../img/blog-image3.webp");
 }
 
 .card-image4 {
-  background-image: url("../img/blog-image4.png");
+  background-image: url("../img/blog-image4.webp");
 }
 
 .blog__card-image {
@@ -763,7 +757,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* GALLERY */
-
 .gallery {
   padding-top: 81px;
   padding-bottom: 0px;
@@ -803,7 +796,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* SUBSCRIBE */
-
 .subscribe {
   max-width: 1240px;
   margin: 0 auto;
@@ -818,8 +810,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
-  /* align-items: center; */
   padding: 40px 100px 41px 100px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
   box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
@@ -884,7 +874,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* FOOTER */
-
 .footer {
   background-color: #1a3e3e;
   color: #ffffff;
@@ -924,8 +913,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
   left: -50px;
 }
+
 .footer__content-important {
-  /* padding-left: 75px; */
   width: 280px;
 }
 
@@ -1003,7 +992,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .footer__social-link {
+  display: inline-block;
   margin-right: 11px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.2);
 }
 
 .footer__content-services-title {

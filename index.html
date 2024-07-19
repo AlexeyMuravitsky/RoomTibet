@@ -14,50 +14,51 @@
 
 <body>
     <div class="background-image-wrap">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__container flex">
                 <a href="#" class="header__logo">
                     <img class="header__logo-img" src="./img/logo.svg" alt="Логотип компании">
                 </a>
-                <nav class="header__nav">
+                <nav class="header__nav" aria-label="Главная навигация">
                     <ul class="header__nav-list list-reset flex" id="headerNav">
                         <li class="header__nav-item">
-                            <a aria-label="На главную" class="header__nav-link" href="#main">Главная</a>
+                            <a aria-label="На главную" class="header__nav-link" href="#header">Главная</a>
                         </li>
                         <li class="header__nav-item">
-                            <a aria-label="Информация о гиде" class="header__nav-link" href="#main">Про гида</a>
+                            <a aria-label="Информация о гиде" class="header__nav-link" href="#about">Про гида</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#main">Программа тура</a>
+                            <a class="header__nav-link" href="#offer">Программа тура</a>
                         </li>
                         <li class="header__nav-item">
                             <a aria-label="Информация о стоймости тура" class="header__nav-link"
-                                href="#main">Стоимость</a>
+                                href="#directions">Стоимость</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="#main">Блог</a>
+                            <a class="header__nav-link" href="#blog">Блог</a>
                         </li>
                         <li class="header__nav-item ">
-                            <a class="header__nav-link" href="#main">Контакты</a>
+                            <a class="header__nav-link" href="#subscribe">Контакты</a>
                         </li>
                         <li class="header__nav-item">
-                            <a aria-label="Связаться с консультантом" class="btn link-consalt"
-                                href="#main">Консультация</a>
-
+                            <a aria-label="Связаться с консультантом" class="btn link-consalt" href="#">Консультация</a>
                         </li>
-
                     </ul>
                 </nav>
-                <button aria-label="Меню" class="btn-menu" id="menuIcon"><img src="./img/menu-icon.svg" alt=""></button>
+                <button aria-label="Меню" class="btn-menu" id="menuIcon">
+                    <span class="btn-menu-line"></span>
+                    <span class="btn-menu-line"></span>
+                    <span class="btn-menu-line"></span>
+                </button>
             </div>
         </header>
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__container">
                 <h1 class="hero__title">Насладись прогулкой в&nbsp;горах с&nbsp;командой единомышленников</h1>
                 <form class="hero__form flex">
                     <div class="hero__label">
-                        <select id="location" name="location" class="hero__select">
+                        <select id="location" name="location" class="hero__select" aria-label="Выберите локацию тура">
                             <option value="">Локация для тура</option>
                             <option value="">Италия</option>
                             <option value="">Швейцария</option>
@@ -67,13 +68,16 @@
                     </div>
                     <div class="hero__label">
                         <div class="hero__input flex">
-                            <input id="date" type="date" name="date" class="hero__input-group">
-                            <input id="date2" type="date" name="date" class="hero__input-group">
+                            <input id="date" type="date" name="date" class="hero__input-group"
+                                aria-label="Выберите дату заезда">
+                            <input id="date2" type="date" name="date" class="hero__input-group"
+                                aria-label="Выберите дату отъезда">
                         </div>
                         <p class="hero__label-descr">укажите диапазон</p>
                     </div>
                     <div class="hero__label">
-                        <select id="participants" name="participants" class="hero__select">
+                        <select id="participants" name="participants" class="hero__select"
+                            aria-label="Выберете кол-во участников похода">
                             <option value="">Участники</option>
                             <option value="">4</option>
                             <option value="">6-10</option>
@@ -88,11 +92,13 @@
         </section>
     </div>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__container flex">
                 <div class="about__images">
-                    <img src="./img/image-top.png" alt="Горы" class="about__images-top">
-                    <img src="./img/image-bottom.png" alt="Дом в горах" class="about__images-bottom">
+                    <img src="./img/image-top.webp" alt="Горы" class="about__images-top">
+                    <div class="image-bottom-icon-play">
+                        <img src="./img/image-bottom.webp" alt="Дом в горах" class="about__images-bottom">
+                    </div>
                 </div>
                 <div class="about__content">
                     <div class="about__subtitle section-subtitle">о&nbsp;нашем походе</div>
@@ -102,12 +108,14 @@
                         двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа Hampden-Sydney,
                         штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum,
                         &quot;consectetur&quot;и занялся его поисками в классической латинской литературе.
+
+
                     </p>
                     <button class="about__button btn">Программа тура</button>
                 </div>
             </div>
         </section>
-        <section class="offer">
+        <section class="offer" id="offer">
             <div class="offer__container flex">
                 <div class="offer__content">
                     <div class="offer__best-offer">
@@ -147,14 +155,14 @@
                     <button class="offer__btn btn">Стоимость программ</button>
                 </div>
                 <div class="offer__images">
-                    <img src="./img/offer-pic1.png" alt="">
-                    <img src="./img/offer-pic2.png" alt="">
-                    <img src="./img/offer-pic3.png" alt="">
-                    <img src="./img/offer-pic4.png" alt="">
+                    <img src="./img/offer-pic1.webp" alt="">
+                    <img src="./img/offer-pic2.webp" alt="">
+                    <img src="./img/offer-pic3.webp" alt="">
+                    <img src="./img/offer-pic4.webp" alt="">
                 </div>
             </div>
         </section>
-        <section class="directions">
+        <section class="directions" id="directions">
             <div class="directions__container flex">
                 <div class="directions__titles">
                     <div class="directions__subtitle section-subtitle">по&nbsp;версии отдыхающих</div>
@@ -224,14 +232,12 @@
                 <button class="directions__btn btn">Рейтинг направлений</button>
             </div>
         </section>
-
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="blog__container">
                 <div class="blog__titles">
                     <div class="blog__subtitle section-subtitle">делимся впечатлениями</div>
                     <h2 class="blog__title section-title">Блог о&nbsp;путешествиях</h2>
                 </div>
-
                 <div class="blog__cards">
                     <ul class="blog__cards-list flex">
                         <li class="blog__cards-item">
@@ -240,8 +246,7 @@
                                 <div class="blog__card-content flex">
                                     <h3 class="blog__card-title">Красивая Италя, какая она в реальности?</h3>
                                     <p class="blog__card-destr">Для современного мира базовый вектор развития
-                                        предполагает независимые способы реализации соответствующих условий активиза/.
-
+                                        предполагает независимые способы реализации соответствующих условий активизации.
                                     </p>
                                     <div class="blog__card-footer flex">
                                         <span class="blog__card-date">01/04/2023</span>
@@ -265,9 +270,6 @@
                                 </div>
                             </article>
                         </li>
-
-
-
                         <li class="blog__cards-item">
                             <article class="blog__card flex">
                                 <div class="blog__card-image card-image3"></div>
@@ -300,34 +302,31 @@
                 <button class="blog__button btn">Другие материалы</button>
             </div>
         </section>
-
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="gallery__container flex">
                 <div class="gallery__titles">
                     <div class="gallery__subtitle section-subtitle">фото-отчет</div>
                     <h2 class="gallery__title section-title">
                         Делимся впечатлениями
                     </h2>
-
                 </div>
                 <div class="gallery__photos flex">
-                    <img class="gallery__photo" src="./img/gallery-pic1.png" alt="">
-                    <img class="gallery__photo" src="./img/gallery-pic2.png" alt="">
-                    <img class="gallery__photo" src="./img/gallery-pic3.png" alt="">
-                    <img class="gallery__photo" src="./img/gallery-pic4.png" alt="">
-                    <img class="gallery__photo" src="./img/gallery-pic5.png" alt="">
-                    <img class="gallery__photo" src="./img/gallery-pic6.png" alt="">
+                    <img class="gallery__photo" src="./img/gallery-pic1.webp" alt="Фотографии с походов">
+                    <img class="gallery__photo" src="./img/gallery-pic2.webp" alt="">
+                    <img class="gallery__photo" src="./img/gallery-pic3.webp" alt="">
+                    <img class="gallery__photo" src="./img/gallery-pic4.webp" alt="">
+                    <img class="gallery__photo" src="./img/gallery-pic5.webp" alt="">
+                    <img class="gallery__photo" src="./img/gallery-pic6.webp" alt="">
                 </div>
                 <button class="gallery__btn btn">Наш pinterest</button>
             </div>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" id="subscribe">
             <div class="subscribe__container flex">
                 <div class="subscribe__info">
                     <span class="subscribe__info-label">фото-отчет</span>
                     <h2 class="subscribe__title section-title">Делимся впечатлениями</h2>
                 </div>
-
                 <div class="subscribe__form">
                     <label for="email" class="subscribe__form-label">Введите e-mail адрес</label>
                     <input type="email" id="email" class="subscribe__form-input" placeholder="name@domain.com">
@@ -342,7 +341,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__container">
             <div class="footer__content flex">
                 <div class="footer__content-info">
@@ -356,10 +355,12 @@
                         <a class="footer__content-info-contact" href="">+7 (123) 456-78-90</a>
                     </div>
                     <div class="footer__socials">
-                        <a href="#" class="footer__social-link"><img src="./img/telegram-icon.svg" alt=""></a>
-                        <a href="#" class="footer__social-link"><img src="./img/vk-icon.svg" alt=""></a>
-                        <a href="#" class="footer__social-link"><img src="./img/pinterest-icom.svg" alt=""></a>
-                        <a href="#" class="footer__social-link"><img src="./img/skype.svg" alt=""></a>
+                        <a href="#" class="footer__social-link"><img src="./img/telegram-icon.svg"
+                                alt="Иконка Telegram"></a>
+                        <a href="#" class="footer__social-link"><img src="./img/vk-icon.svg" alt="Иконка VK"></a>
+                        <a href="#" class="footer__social-link"><img src="./img/pinterest-icom.svg"
+                                alt="Иконка Pinterest"></a>
+                        <a href="#" class="footer__social-link"><img src="./img/skype.svg" alt="Иконка Skype"></a>
                     </div>
                 </div>
                 <div class="footer__content-services">
@@ -386,12 +387,7 @@
                                 сюда</a></li>
                     </ul>
                 </div>
-
             </div>
-
-
-
-
         </div>
         <div class="footer__copyrights">
             <div class="footer__copyrights__container flex">
