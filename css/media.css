@@ -1,5 +1,5 @@
 @media (max-width: 1279px) {
-  .header__container {
+  .header__top {
     padding: 25px;
   }
 
@@ -7,7 +7,7 @@
     left: 0;
   }
 
-  .hero__container {
+  .header__content {
     padding: 0 16px 85px 16px;
   }
 
@@ -137,7 +137,7 @@
     background-image: url(../img/footer-arrow-hover.svg);
   }
 
-  .header__nav-list {
+  .nav__list {
     z-index: 2;
     position: fixed;
     left: 0;
@@ -160,11 +160,12 @@
     transform: translateX(0);
   }
 
-  .hero__form {
+  .header__form {
+    display: flex;
     display: none;
   }
 
-  .hero__button-mobile {
+  .header__button-mobile {
     display: block;
   }
 
@@ -209,9 +210,9 @@
     line-height: 24px;
   }
 
-  .header__container {
+  .header__top {
     padding: 16px 6px 0 16px;
-    margin-bottom: 228px;
+    margin-bottom: 234px;
   }
 
   .header__logo-img {
@@ -227,15 +228,19 @@
     top: 1px;
   }
 
-  .hero__container {
+  .header__content {
     padding-bottom: 50px;
   }
 
-  .hero__title {
+  .header__button {
+    padding: 16px 36px;
+  }
+
+  .header__title {
     font-size: 28px;
     line-height: 42px;
     letter-spacing: 0px;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
   .about__images-bottom {
@@ -304,10 +309,6 @@
     width: 285px;
   }
 
-  .blog__cards {
-    padding-left: 0;
-  }
-
   .blog__card {
     border-radius: 6px;
     overflow: hidden;
@@ -361,7 +362,7 @@
     padding-bottom: 50px;
   }
 
-  .blog__cards-list {
+  .blog__cards {
     overflow: hidden;
     flex-wrap: nowrap;
     display: flex;
@@ -372,15 +373,18 @@
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     margin-bottom: 33px;
-  }
 
-  .blog__cards-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  .blog__cards {
     display: flex;
     width: 358px;
+
+    padding-left: 0;
+
+    display: flex;
+    width: 358px;
+  }
+
+  .blog__cards::-webkit-scrollbar {
+    display: none;
   }
 
   .blog__titles {
@@ -454,6 +458,10 @@
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     margin-bottom: 33px;
+  }
+
+  .gallery__photos::-webkit-scrollbar {
+    display: none;
   }
 
   .gallery__photo {
@@ -607,7 +615,7 @@
 }
 
 @media (max-width: 389px) {
-  .hero__title {
+  .header__title {
     font-size: 22px;
   }
 

@@ -1,47 +1,45 @@
 @font-face {
   font-family: "Nunito Sans";
-  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito Sans";
-  src: url("../fonts/NunitoSans-SemiBold.ttf") format("truetype");
+  src: url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Bold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Nunito Sans";
-  src: url("../fonts/NunitoSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../fonts/NunitoSans-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Next Art";
-  src: url("../fonts/NEXT ART_Regular.otf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Next Art";
-  src: url("../fonts/NEXT ART_Bold.otf") format("truetype");
+  font-family: "NEXT ART";
+  src: url("../fonts/Nextartbold.woff2") format("woff2"),
+    url("../fonts/Nextartbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", "Next Art", sans-serif;
 }
 
 html {
@@ -167,17 +165,18 @@ a:hover {
   display: none;
 }
 
-.hero__button-mobile {
+.header__button-mobile {
   display: none;
 }
 
-.background-image-wrap {
-  background-image: url("../img/hero-background.webp");
+.header {
+  background-image: url("../img/header-background.webp");
   background-size: cover;
   background-position: center;
 }
 
-.header__container {
+.header__top {
+  display: flex;
   padding: 16px 25px 0 5px;
   max-width: 1180px;
   margin: 0 auto;
@@ -193,11 +192,12 @@ a:hover {
   margin-bottom: 460px;
 }
 
-.header__nav-list {
+.nav__list {
+  display: flex;
   font-size: 18px;
 }
 
-.header__nav-item:not(:last-child) {
+.nav__list-item:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -213,8 +213,7 @@ a:hover {
   left: 33px;
 }
 
-/* HERO */
-.hero__container {
+.header__content {
   max-width: 1240px;
   padding-left: 35px;
   padding-right: 20px;
@@ -222,7 +221,7 @@ a:hover {
   padding-bottom: 85px;
 }
 
-.hero__select {
+.header__select {
   width: 100%;
   border: 0;
   cursor: pointer;
@@ -236,9 +235,11 @@ a:hover {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
-.hero__input {
+.header__input {
+  display: flex;
   cursor: pointer;
   padding: 16px 1px;
   background-color: rgba(0, 0, 0, 0);
@@ -246,9 +247,10 @@ a:hover {
   border: 1px solid #fdfdfd;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  margin-bottom: 8px;
 }
 
-.hero__input-group {
+.header__input-group {
   color: #fdfdfd;
   background: none;
   border: none;
@@ -260,46 +262,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 1;
 }
 
-.hero__button {
+.header__button {
   -ms-flex-item-align: start;
   align-self: flex-start;
-  max-width: 213px;
-  height: 52px;
-  border-radius: 4px;
-  padding: 16px 36px;
-  border: none;
   font-weight: 700;
-  cursor: pointer;
   background-color: #ffffff;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  color: #000000;
+  padding: 16px 36px;
 }
 
-.hero__button:hover {
-  background-color: #f2be22;
-}
-
-.hero__button:active {
-  background-color: #bd941b;
-}
-
-.hero__label {
+.header__label {
   width: 270px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.hero__label-descr {
-  padding-top: 8px;
+.header__label-descr {
+  width: 270px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: block;
+  /* padding-top: 8px; */
   font-family: "Nunito Sans";
   font-size: 14px;
   font-weight: 400;
   color: #fdfdfd;
 }
 
-.hero__form {
+.header__form {
+  display: flex;
   gap: 24px;
   max-width: 1180px;
   padding: 40px;
@@ -309,7 +302,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-wrap: wrap;
 }
 
-.hero__title {
+.header__title {
   font-family: "NEXT ART";
   font-size: 50px;
   font-weight: 700;
@@ -321,6 +314,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* ABOUT */
 .about__container {
+  display: flex;
   position: relative;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -389,6 +383,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .offer__container {
+  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -398,6 +393,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: 1240px;
   padding: 0 22px;
   margin: 0 auto;
+}
+
+.offer__advantage {
+  display: flex;
 }
 
 .offer__content {
@@ -473,6 +472,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* DIRECTIONS */
 .directions__container {
+  display: flex;
   max-width: 1240px;
   margin: 0 auto;
   padding-bottom: 85px;
@@ -493,6 +493,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .directions__list {
+  display: flex;
   gap: 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -509,14 +510,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 500px;
 }
 
-.directions-rating1::before,
-.directions-rating2::before,
-.directions-rating3::before {
+.directions-lable::before {
+  content: "";
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 900;
   top: 50px;
   right: 0px;
   background-position: left center;
@@ -532,25 +531,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
 }
 
-.directions-rating1::before {
-  content: "4.9";
-}
-.directions-rating2::before {
-  content: "4.5";
-}
-.directions-rating3::before {
-  content: "5.0";
+.directions-rating {
+  position: absolute;
+  font-weight: 900;
+  top: 57px;
+  right: 10px;
 }
 
-.directions__item-img1 {
+.directions__item-lake {
   background-image: url(../img/direction-pic1.webp);
 }
 
-.directions__item-img2 {
+.directions__item-sky {
   background-image: url(../img/direction-pic2.webp);
 }
 
-.directions__item-img3 {
+.directions__item-yoga {
   background-image: url(../img/direction-pic3.webp);
 }
 
@@ -607,6 +603,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .directions__item-overlay-header {
+  display: flex;
   margin-bottom: 38px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -641,10 +638,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: 0;
 }
 
-.blog__cards {
-  padding-left: 20px;
-}
-
 .blog__title {
   margin-bottom: 43px;
 }
@@ -661,6 +654,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .blog__card {
+  display: flex;
   border-radius: 10px;
   background-color: #fdfdfd;
   padding: 14px 16px;
@@ -698,6 +692,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .blog__card-content {
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -715,6 +710,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .blog__card-footer {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -730,7 +726,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   overflow: hidden;
 }
 
-.blog__cards-list {
+.blog__cards {
+  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   display: -webkit-box;
@@ -743,6 +740,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 0;
   margin-bottom: 51px;
   padding: 0;
+  padding-left: 20px;
 }
 
 .blog__button {
@@ -763,6 +761,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .gallery__container {
+  display: flex;
   max-width: 1240px;
   margin: 0 auto;
   -webkit-box-orient: vertical;
@@ -779,6 +778,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .gallery__photos {
+  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -803,6 +803,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .subscribe__container {
+  display: flex;
   top: 100px;
   position: relative;
   -webkit-box-pack: center;
@@ -888,6 +889,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .footer__content {
+  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1014,6 +1016,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .footer__copyrights__container {
+  display: flex;
   position: relative;
   left: 10px;
   -webkit-box-pack: justify;
