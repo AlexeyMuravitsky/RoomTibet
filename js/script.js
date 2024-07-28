@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menuIcon = document.getElementById("menuIcon");
-  const headerNav = document.getElementById("headerNav");
+  const menuIcon = document.querySelector(".btn-menu");
+  const headerNav = document.querySelector(".nav__list");
   const navLinks = headerNav.querySelectorAll("a");
 
   menuIcon.addEventListener("click", () => {
@@ -17,12 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.remove("no-scroll");
       headerNav.classList.remove("open");
       menuIcon.classList.remove("burger-active");
-
-      const targetSection = document.querySelector(
-        `[data-section="${link.getAttribute("href").substring(1)}"]`
-      );
-
-      targetSection.scrollIntoView({ behavior: "smooth" });
     });
   });
 });
